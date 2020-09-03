@@ -13,16 +13,17 @@ O seu único desenvolvedor backend está de ferias, então você foi recrutado p
 ### Requisitos
 
 1. Modelagem de dados utilizando a nossa incrível ORM (documentada abaixo):
-  * A modelagem de dados deve ser feita no arquivo `models.py`
+  * Você está livre para organizar a estrutura de pastas dos modelos como preferir
   * Cada colaborador deve pertencer a **um** departamento
   * Cada departamento deve possuir um *ID* e um *nome de departamento*
   * Cada colaborador pode possuir **nenhum, um ou mais** dependententes
-  * Cada dependente deve possuir um *ID* e um *nome completo*
+  * Cada dependent  e deve possuir um *ID* e um *nome completo*
   * Cada funcionário deve possuir um *ID* e um *nome completo*
 
-2. A API deve possuir:
-  * Um endpoint de consulta de todos os departamentos
-  * Um endpoint de busca de funcionários e seus respectivos dependentes, por departamento
+2. API e seus endpoints:
+  * Você está livre para organizar a API do jeito que preferir
+  * A API deve possuir um endpoint de consulta de todos os departamentos
+  * A API deve possuir um endpoint de busca de funcionários e seus respectivos dependentes, por departamento
  
 **Não se preocupe se não conseguir atender a todos os requisitos :)**
 
@@ -45,7 +46,7 @@ Essa é a ORM mais avançada do mercado e você vai utiliza-la para modelar seus
 
 ```
 class MyModel(IncredibleModel):
-    field = IncredibleField(options)
+    field = IncredibleField(arg=value)
 
     def my_method(self):
         return something
@@ -57,7 +58,7 @@ class MyModel(IncredibleModel):
 
 Este tipo de campo representa um número inteiro e utiliza o tipo de dados `int` do Python.
 
-Opcões:
+Args:
 - `optional`: Indica se o campo é obrigatório (o padrão é `True`)
 
 Exemplo:
@@ -67,7 +68,7 @@ Exemplo:
 
 Este tipo de dados representa uma sequência de caracteres e utiliza o tipo `string` do Python.
 
-Opções:
+Args:
 - `optional`: Indica se o campo é obrigatório (o padrão é `True`)
 - `max_length`: Tamanho máximo da sequência de caracteres (requerido)
 
@@ -76,5 +77,12 @@ Exemplo:
 
 ### IncredibleForeignKey    
 
-Este tipo de dados representa uma relação entre dois 
+Este tipo de dados representa uma relação entre dois modelos.
+
+Args:
+- `optional`: Indica se o campo é obrigatório (o padrão é `True`)
+- `to`: Modelo alvo da relação
+
+Exemplo:
+> IncredibleForeignKey(optional=False, to=AnotherModel)
 
