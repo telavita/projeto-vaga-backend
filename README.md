@@ -6,32 +6,32 @@ Projeto de modelagem de dados e criação de uma API utilizando Python e Flask.
 
 ## Sobre o projeto
 
-A ACMEVita está expandindo seus negócios e precisa de um sistema para gerenciar seus colaboradores, departamentos, e dependentes.
+A ACMEVita está expandindo seus negócios e precisa de um sistema para gerenciar seus departamentos, colaboradores e dependentes.
 
 O seu único desenvolvedor backend está de ferias, você foi recrutado para finalizar este projeto, boa sorte!
 
 ### Requisitos
 
-1. Modelagem de dados utilizando a nossa [incrível ORM](docs/IncredibleORM.md):
-  * Você está livre para organizar a estrutura de pastas dos modelos como preferir
-  * Cada colaborador deve possuir um *ID* e um *nome completo*
-  * Cada dependente deve possuir um *ID* e um *nome completo*
-  * Cada departamento deve possuir um *ID* e um *nome de departamento*
-  * Cada colaborador deve pertencer a **um** departamento
-  * Cada colaborador pode possuir **nenhum, um ou mais** dependententes
+#### Como um Usuário da API eu gostaria de consultar todos os departamentos para visualizar a organização da ACMEVita.
 
-2. API:
-  * Você está livre para organizar a API do jeito que preferir
-  * A API deve possuir um endpoint de consulta de todos os departamentos
-  * A API deve possuir um endpoint de busca de funcionários e seus respectivos dependentes, por departamento
- 
-**Não se preocupe se não conseguir atender a todos os requisitos :)**
+  * Cada departamento deve possuir um *nome do departamento*.
+  * A API deve responder com uma listagem de departamentos no formato JSON informando o *nome do departamento* de cada departamento.
+
+#### Como um Usuário da API eu gostaria de consultar todos os colaboradores de um departamento para visualizar a organização da ACMEVita.
+
+  * Cada colaborador deve possuir um *nome completo*.
+  * Cada colaborador deve pertencer a *um* departamento.
+  * Cada colaborador pode possuir *nenhum, um ou mais* dependententes.
+  * A API deve responder com uma listagem de colaboradores do departamento no formato JSON informando o *nome completo* de cada colaborador e a respectiva flag booleana `have_dependents` caso o colaborador possua *um ou mais dependentes*.
 
 ### Instruções
 
 1. Faça um _fork_ ou download deste projeto.
 2. Trabalhe localmente no seu projeto, faça até o ponto que conseguir.
-3. Suba o seu projeto para o GitLab, GitHub ou qualquer similar.
-4. Nos envie o link para o seu projeto, **mesmo que não esteja finalizado!**
+3. Você está livre para organizar a estrutura do projeto como preferir.
+4. Você deve utilizar o Flask para criar os endpoints da API.
+4. Você deve utilizar a nossa [incrível ORM](docs/IncredibleORM.md) para modelar seus dados.
+5. Suba o seu projeto para o GitLab, GitHub ou qualquer similar.
+6. Nos envie o link para o seu projeto, **mesmo que não esteja finalizado!**
 
 **Qualquer dúvida, entre em contato com [Rafael](mailto:rc@telavita.com.br)!**
