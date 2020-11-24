@@ -30,7 +30,7 @@ O seu único desenvolvedor backend está de ferias, você foi recrutado para fin
 2. Trabalhe localmente no seu projeto, faça até o ponto que conseguir.
 3. Você está livre para organizar a estrutura do projeto como preferir.
 4. Você deve utilizar o Flask para criar os endpoints da API.
-4. Você deve utilizar a nossa [incrível ORM](docs/IncredibleORM.md) para modelar seus dados.
+4. Você pode utilizar a ORM de sua preferência para modelagem de dados.
 5. Suba o seu projeto para o GitLab, GitHub ou qualquer similar.
 6. Nos envie o link para o seu projeto, **mesmo que não esteja finalizado!**
 
