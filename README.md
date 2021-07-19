@@ -14,15 +14,22 @@ O seu único desenvolvedor backend está de ferias, você foi recrutado para fin
 
 #### Como um Usuário da API eu gostaria de consultar todos os departamentos para visualizar a organização da ACMEVita.
 
-  * Cada departamento deve possuir um *nome do departamento*.
-  * A API deve responder com uma listagem de departamentos no formato JSON informando o *nome do departamento* de cada departamento.
+* Cada departamento deve possuir um *nome do departamento*.
+* A API deve responder com uma listagem de departamentos no formato JSON informando o *nome do departamento* de cada departamento.
 
 #### Como um Usuário da API eu gostaria de consultar todos os colaboradores de um departamento para visualizar a organização da ACMEVita.
 
-  * Cada colaborador deve possuir um *nome completo*.
-  * Cada colaborador deve pertencer a *um* departamento.
-  * Cada colaborador pode possuir *nenhum, um ou mais* dependententes.
-  * A API deve responder com uma listagem de colaboradores do departamento no formato JSON informando o *nome completo* de cada colaborador e a respectiva flag booleana `have_dependents` caso o colaborador possua *um ou mais dependentes*.
+* Cada colaborador deve possuir um *nome completo*.
+* Cada colaborador deve pertencer a *um* departamento.
+* Cada colaborador pode possuir *nenhum, um ou mais* dependententes.
+* A API deve responder com uma listagem de colaboradores do departamento no formato JSON informando o *nome completo* de cada colaborador e a respectiva flag booleana `have_dependents` caso o colaborador possua *um ou mais dependentes*.
+
+### Diferenciais
+
+* Testes unitários
+* Referência (Swagger ou similar)
+* Documentação e instruções de configuração
+* Separação das camadas de responsabilidade (modelagem de dados, serialização, lógica, etc)
 
 ### Instruções
 
@@ -31,7 +38,7 @@ O seu único desenvolvedor backend está de ferias, você foi recrutado para fin
 3. Você está livre para organizar a estrutura do projeto como preferir.
 4. Você deve utilizar o Flask para criar os endpoints da API.
 4. Você pode utilizar a ORM de sua preferência para modelagem de dados.
-5. Suba o seu projeto para o GitLab, GitHub ou qualquer similar.
+5. Suba o seu projeto para o GitLab, GitHub ou similar.
 6. Nos envie o link para o seu projeto, **mesmo que não esteja finalizado!**
 
 **Qualquer dúvida, entre em contato com [Rafael](mailto:rc@telavita.com.br)!**
