@@ -29,16 +29,16 @@ O seu único desenvolvedor backend está de ferias, você foi recrutado para fin
 * Testes unitários
 * Referência (Swagger ou similar)
 * Documentação e instruções de configuração
-* Separação das camadas de responsabilidade (modelagem de dados, serialização, lógica, etc)
+* Separação das camadas de responsabilidade (modelagem de dados, serialização, regras de negócio, etc)
 
 ### Instruções
 
 1. Faça um _fork_ ou download deste projeto.
 2. Trabalhe localmente no seu projeto, faça até o ponto que conseguir.
 3. Você está livre para organizar a estrutura do projeto como preferir.
-4. Você deve utilizar o Flask para criar os endpoints da API.
+4. Você deve utilizar o Flask ou FastAPI para criar os endpoints da API.
 4. Você pode utilizar a ORM de sua preferência para modelagem de dados.
-5. Suba o seu projeto para o GitLab, GitHub ou similar.
+5. Suba o seu projeto para o GitHub e habilite a funcionalidade de Issues.
 6. Nos envie o link para o seu projeto, **mesmo que não esteja finalizado!**
 
 **Qualquer dúvida, entre em contato com [Rafael](mailto:rc@telavita.com.br)!**
